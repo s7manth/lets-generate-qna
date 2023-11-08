@@ -1,0 +1,99 @@
+Question 1: 
+What is a feed-forward network in the context of neural networks?
+A) A network where data flows in multiple directions
+B) A network where data flows in one direction, from input to output
+C) A network where data flows in a circular pattern
+D) A network where data does not flow
+
+Explanation:
+Option B is correct. As per the context, a feed-forward network is any neural network in which the data flows in one direction, from input to output.
+
+Question 2:
+What is a perceptron in the context of neural networks?
+A) A complex neural network model with multiple units
+B) A simple neural network model that can learn nontrivial patterns
+C) A simple neural network model that fails to learn nontrivial patterns
+D) A complex neural network model that fails to learn nontrivial patterns
+
+Explanation: 
+Option C is correct. As per the context, a perceptron is the simplest neural network that can exist and it fails to learn modestly nontrivial patterns present in data.
+
+Question 3:
+What is a tensor in PyTorch terminology?
+A) A special case of a vector
+B) A multidimensional array of scalars
+C) A single number or scalar
+D) An array of numbers
+
+Explanation:
+Option B is correct. As per the context, in PyTorch terminology, a tensor is a multidimensional array of scalars.
+
+Question 4:
+What is the main difference between a multilayer perceptron (MLP) and a simple perceptron?
+A) MLPs have a single layer of perceptrons, while simple perceptrons have multiple layers
+B) MLPs cannot learn nontrivial patterns, while simple perceptrons can
+C) MLPs extend the simple perceptron by grouping many perceptrons in a single layer and stacking multiple layers together
+D) There is no difference between MLPs and simple perceptrons
+
+Explanation:
+Option C is correct. As per the context, the multilayer perceptron structurally extends the simpler perceptron by grouping many perceptrons in a single layer and stacking multiple layers together.
+
+Question 5:
+What is the main advantage of convolutional neural networks (CNNs) over other types of neural networks?
+A) CNNs are able to learn localized patterns in their inputs
+B) CNNs are simpler and easier to implement
+C) CNNs are faster and more efficient
+D) CNNs are more accurate and reliable
+
+Explanation:
+Option A is correct. As per the context, through their windowing property, CNNs are able to learn localized patterns in their inputs.
+
+Question 6:
+What is the role of the Vocabulary, Vectorizer, and DataLoader in PyTorch?
+A) They are used for creating tensors
+B) They are used for installing PyTorch
+C) They are used for data preprocessing and loading
+D) They are used for model evaluation and prediction
+
+Explanation:
+Option C is correct. As per the context, the Vocabulary, Vectorizer, and DataLoader are used in the data preprocessing and loading stage.
+
+Question 7:
+What is the purpose of regularization in neural networks?
+A) To increase the complexity of the model
+B) To prevent overfitting by adding a penalty to the loss function
+C) To speed up the training process
+D) To increase the accuracy of the model
+
+Explanation:
+Option B is correct. As per the context, regularization is used to prevent overfitting by adding a penalty to the loss function.
+
+Question 8:
+What is the purpose of using CUDA tensors with GPUs in PyTorch?
+A) To increase the size of the tensors
+B) To decrease the complexity of the tensors
+C) To perform tensor operations on the GPU for increased speed
+D) To convert tensors into vectors
+
+Explanation:
+Option C is correct. As per the context, CUDA tensors are used with GPUs to perform tensor operations on the GPU for increased speed.
+
+Question 9:
+What is the main advantage of using pretrained word embeddings in natural language processing?
+A) They are easier to implement
+B) They are faster and more efficient
+C) They can capture semantic and syntactic meanings of words
+D) They can reduce the size of the vocabulary
+
+Explanation:
+Option C is correct. As per the context, pretrained word embeddings can capture semantic and syntactic meanings of words.
+
+Question 10: 
+What is the main disadvantage of the perceptron model?
+A) It cannot learn modestly nontrivial patterns present in data
+B) It is too complex to implement
+C) It is too slow and inefficient
+D) It cannot handle large datasets
+
+Explanation:
+Option A is correct. As per the context, one of the historic downfalls of the perceptron was that it cannot learn modestly nontrivial patterns present in data.

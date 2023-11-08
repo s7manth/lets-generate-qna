@@ -1,0 +1,20 @@
+Examples of Expected Results:
+Question 1:
+In a feed-forward neural network used for NLP tasks in PyTorch, what is the role of the `nn.Embedding` layer?
+A) To reduce the dimensionality of input data
+B) To encode categorical variables as one-hot vectors
+C) To map word tokens to vectors of fixed size
+D) To perform normalization of word vectors
+
+Explanation:
+C) The `nn.Embedding` layer in PyTorch is used to map word tokens (usually represented as integer indices) to vectors of a fixed size. This is a form of a lookup table where each unique token is associated with a vector, and it serves as a trainable layer in the network.
+
+Question 2:
+When using a feed-forward neural network for classification in NLP, what is the purpose of applying a softmax function in the final layer?
+A) To convert the output to binary values
+B) To select the neuron with the maximum value as the output
+C) To amplify the activation of neurons
+D) To transform the output into a probability distribution over predicted output classes
+
+Explanation:
+D) The softmax function is applied to the final layer of a feed-forward neural network in classification tasks to transform the raw output scores (logits) into a probability distribution over the predicted output classes. It ensures that all outputs sum to 1 and can be interpreted as probabilities.

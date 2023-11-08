@@ -1,0 +1,55 @@
+Question 3:
+- Relevance: High
+- Plausibility: High
+- Difficulty: Medium
+- Quality: High
+- Category: Conceptual Understanding
+
+Question 4:
+- Relevance: High
+- Plausibility: High
+- Difficulty: Low
+- Quality: High
+- Category: Factual Recall
+
+Question 5:
+- Relevance: High
+- Plausibility: High
+- Difficulty: Low
+- Quality: High
+- Category: Factual Recall
+
+Question 6:
+- Relevance: High
+- Plausibility: High
+- Difficulty: Medium
+- Quality: High
+- Category: Conceptual Understanding
+
+Question 7:
+- Relevance: High
+- Plausibility: High
+- Difficulty: Medium
+- Quality: High
+- Category: Conceptual Understanding
+
+Question 8:
+- Relevance: High
+- Plausibility: High
+- Difficulty: Medium
+- Quality: High
+- Category: Conceptual Understanding
+
+Question 9:
+- Relevance: High
+- Plausibility: High
+- Difficulty: High
+- Quality: High
+- Category: Critical Thinking
+
+Question 10:
+- Relevance: High
+- Plausibility: High
+- Difficulty: Low
+- Quality: High
+- Category: Factual Recall

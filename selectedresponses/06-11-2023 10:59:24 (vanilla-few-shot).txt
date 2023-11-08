@@ -1,0 +1,79 @@
+Question 3:
+In PyTorch, when initializing weights for a feed-forward neural network for an NLP task, why is it important to avoid initializing all weights to the same value?
+A) Because it will prevent the network from training
+B) Because it will cause the loss function to be non-convex
+C) Because it can lead to the "vanishing gradients" problem
+D) Because it will prevent the network from learning different features in different neurons
+
+Explanation:
+D) Initializing all weights to the same value in a feed-forward neural network will result in each neuron in a layer learning the same features during training, as they will all receive the same gradient update. This prevents the model from learning a diverse set of features and impairs the training process.
+
+Question 4:
+Considering a feed-forward neural network used for NLP in PyTorch, what is the role of the `nn.Linear` layer?
+A) To perform element-wise non-linear transformations
+B) To apply a linear transformation to the incoming data
+C) To normalize the input data
+D) To randomly drop out units during training to prevent overfitting
+
+Explanation:
+B) The `nn.Linear` layer in PyTorch applies a linear transformation to the incoming data. It is a fully connected layer that can be used to change the dimensionality of the input data and is often followed by a non-linear activation function.
+
+Question 5:
+Which activation function in PyTorch is commonly used in the output layer of a feed-forward neural network for a binary classification NLP task?
+A) ReLU
+B) Tanh
+C) Sigmoid
+D) Softmax
+
+Explanation:
+C) The sigmoid activation function is commonly used in the output layer of a feed-forward neural network for binary classification tasks because it squashes the output to a range between 0 and 1, which can be interpreted as the probability of the input being in one of the two classes.
+
+Question 6:
+What is the primary benefit of using mini-batch gradient descent over stochastic gradient descent in training a feed-forward neural network for NLP tasks?
+A) It converges to the global minimum for non-convex loss functions
+B) It always produces the same results regardless of the initial weights
+C) It reduces the variance of the parameter updates, leading to more stable convergence
+D) It eliminates the need for an activation function
+
+Explanation:
+C) Mini-batch gradient descent reduces the variance of the parameter updates compared to stochastic gradient descent, which updates weights based on only one sample at a time. This results in more stable convergence by balancing the benefits of stochastic gradient descent (faster convergence, less memory) and batch gradient descent (stable, but slow and memory-intensive).
+
+Question 7:
+In the context of NLP using feed-forward neural networks in PyTorch, what is the primary purpose of using dropout layers during training?
+A) To increase the sparsity of the feature representations
+B) To speed up the training process
+C) To prevent overfitting by randomly setting a subset of activations to zero
+D) To balance the classes in an imbalanced dataset
+
+Explanation:
+C) Dropout is a regularization technique used during training that helps prevent overfitting in neural networks. It randomly sets a subset of activations to zero, which prevents units from co-adapting too much and forces the network to learn robust features.
+
+Question 8:
+When designing a feed-forward neural network for an NLP task, why might you choose to use ReLU (Rectified Linear Unit) activation functions rather than sigmoid functions in the hidden layers?
+A) ReLU functions can output a range of values from 0 to infinity.
+B) ReLU functions always output negative values when the input is less than zero.
+C) ReLU functions have a constant gradient which prevents vanishing gradients during backpropagation.
+D) ReLU functions are linear and preserve the properties of linear models.
+
+Explanation:
+A) ReLU activation functions are preferred in hidden layers because they can output a range of values from 0 to infinity, which helps mitigate the vanishing gradient problem that can occur with sigmoid functions. 
+
+Question 9:
+In a feed-forward neural network for NLP, if a model is experiencing high variance and overfitting, which technique may NOT help in addressing this issue?
+A) Increasing the size of the training dataset
+B) Adding more hidden layers to the network
+C) Applying dropout regularization
+D) Early stopping during training
+
+Explanation:
+B) Adding more hidden layers to the network will likely increase the model's capacity to fit the training data, potentially exacerbating the overfitting problem. The other options listed can help reduce overfitting by either providing more data to generalize from, regularizing the network, or stopping training before overfitting becomes severe.
+
+Question 10:
+What is the typical sequence of operations in a feed-forward layer of a neural network in PyTorch when processing NLP data?
+A) Activation -> Dropout -> Linear Transformation
+B) Linear Transformation -> Activation -> Dropout
+C) Normalization -> Activation -> Linear Transformation
+D) Dropout -> Linear Transformation -> Activation
+
+Explanation:
+B) The typical sequence of operations in a feed-forward layer of a neural network is to first apply a linear transformation (via `nn.Linear`) to the data, followed by a non-linear activation function (like ReLU or sigmoid), and then, if appropriate, apply dropout (`nn.Dropout`) for regularization.

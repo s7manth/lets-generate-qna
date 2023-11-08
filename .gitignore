@@ -166,5 +166,5 @@ cython_debug/
 # Static
 tmp/
 responsebuffers/
-prompts/
+# prompts/
 data/

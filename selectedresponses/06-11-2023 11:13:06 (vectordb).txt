@@ -1,0 +1,99 @@
+Question 1: 
+What is the purpose of the Adam optimizer in the given PyTorch code?
+A) To calculate the loss function
+B) To update the parameters of the model
+C) To initialize the parameters of the model
+D) To calculate the gradient of the loss function
+
+Explanation:
+The Adam optimizer in PyTorch is used to update the parameters of the model based on the gradients of the loss function.
+
+Question 2:
+What does the gradient of the loss function represent in the context of neural network training?
+A) The rate of change in the loss value given the parameter
+B) The rate of change in the parameter given the loss value
+C) The absolute value of the loss function
+D) The absolute value of the parameter
+
+Explanation: 
+The gradient of the loss function represents the instantaneous rate of change in the loss value given the parameter. It indicates how much each parameter contributed to the loss function.
+
+Question 3:
+What is the function of the backward() method in PyTorch?
+A) It propagates the loss forward through the computational graph
+B) It propagates the loss backward through the computational graph
+C) It calculates the loss function
+D) It updates the parameters of the model
+
+Explanation: 
+The backward() method in PyTorch propagates the loss backward through the computational graph and notifies each parameter of its gradient.
+
+Question 4:
+What is the main disadvantage of multilayer perceptrons (MLPs) mentioned in the context?
+A) Lack of parameter sharing
+B) High memory requirements
+C) Inability to approximate nonlinear functions
+D) Inefficient implementation
+
+Explanation: 
+The main disadvantage of MLPs mentioned in the context is the lack of parameter sharing.
+
+Question 5:
+What is the purpose of convolutional networks in the context of NLP?
+A) To capture substructure information in language
+B) To classify nationalities from surnames
+C) To approximate any nonlinear function
+D) To share parameters across different parts of the model
+
+Explanation: 
+In the context of NLP, convolutional networks are used to capture substructure information in language.
+
+Question 6:
+What are the four main requirements for supervised learning as mentioned in the context?
+A) A model, a loss function, training data, and a gradient-based optimization algorithm
+B) A model, a loss function, test data, and a gradient-based optimization algorithm
+C) A model, a loss function, validation data, and a gradient-based optimization algorithm
+D) A model, a loss function, training data, and a non-gradient-based optimization algorithm
+
+Explanation: 
+The four main requirements for supervised learning as mentioned in the context are a model, a loss function, training data, and a gradient-based optimization algorithm.
+
+Question 7:
+What is the goal of training in supervised learning?
+A) To adjust the model’s parameters so that the losses are as high as possible
+B) To adjust the model’s parameters so that the losses are as low as possible
+C) To adjust the model’s parameters so that the losses are equal to zero
+D) To adjust the model’s parameters so that the losses are equal to one
+
+Explanation: 
+The goal of training in supervised learning is to adjust the model’s parameters so that the losses are as low as possible.
+
+Question 8:
+What is the purpose of the decision boundary or hyperplane in the context of classifying two-dimensional points into one of two classes?
+A) To discriminate the points of one class from the other
+B) To calculate the loss function
+C) To update the parameters of the model
+D) To calculate the gradient of the loss function
+
+Explanation: 
+In the context of classifying two-dimensional points into one of two classes, the decision boundary or hyperplane is used to discriminate the points of one class from the other.
+
+Question 9:
+What is the learning rate (lr) in the given PyTorch code?
+A) 0.001
+B) 2
+C) 0.01
+D) 1
+
+Explanation: 
+The learning rate (lr) in the given PyTorch code is 0.001.
+
+Question 10: 
+What is the input dimension (input_dim) in the given PyTorch code?
+A) 0.001
+B) 2
+C) 0.01
+D) 1
+
+Explanation:
+The input dimension (input_dim) in the given PyTorch code is 2.

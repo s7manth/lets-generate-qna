@@ -1,0 +1,69 @@
+Question 1:
+- Relevance: High
+- Plausibility: High
+- Difficulty: Medium
+- Quality: High
+- Category: Conceptual Understanding
+
+Question 2:
+- Relevance: High
+- Plausibility: High
+- Difficulty: Medium
+- Quality: High
+- Category: Conceptual Understanding
+
+Question 3:
+- Relevance: Medium (CNNs are not a type of Feed Forward Neural Networks, but they are related)
+- Plausibility: High
+- Difficulty: High
+- Quality: Medium
+- Category: Conceptual Understanding
+
+Question 4:
+- Relevance: High
+- Plausibility: High
+- Difficulty: Low
+- Quality: High
+- Category: Factual Recall
+
+Question 5:
+- Relevance: High
+- Plausibility: High
+- Difficulty: Low
+- Quality: High
+- Category: Factual Recall
+
+Question 6:
+- Relevance: Medium (While PyTorch is relevant, the specific Python version for installing it is more about the tool than the concept of Feed Forward Neural Networks)
+- Plausibility: High
+- Difficulty: Low
+- Quality: Medium
+- Category: Factual Recall
+
+Question 7:
+- Relevance: High
+- Plausibility: High
+- Difficulty: High
+- Quality: High
+- Category: Conceptual Understanding
+
+Question 8:
+- Relevance: Medium (CNNs are not a type of Feed Forward Neural Networks, but they are related)
+- Plausibility: High
+- Difficulty: Medium
+- Quality: Medium
+- Category: Factual Recall
+
+Question 9:
+- Relevance: Medium (While PyTorch is relevant, the specific command for installing it is more about the tool than the concept of Feed Forward Neural Networks)
+- Plausibility: High
+- Difficulty: Low
+- Quality: Medium
+- Category: Factual Recall
+
+Question 10:
+- Relevance: High
+- Plausibility: High
+- Difficulty: Low
+- Quality: High
+- Category: Factual Recall

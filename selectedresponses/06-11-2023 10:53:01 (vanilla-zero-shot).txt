@@ -1,0 +1,99 @@
+Question 1: 
+Which of the following loss functions is commonly used in a multi-class feed-forward neural network for NLP classification tasks in PyTorch?
+A) Mean Squared Error (MSE) Loss
+B) Binary Cross-Entropy Loss
+C) Cross-Entropy Loss
+D) Hinge Loss
+
+Explanation:
+C) Cross-Entropy Loss is widely used for multi-class classification problems, including NLP tasks, because it measures the performance of a classification model whose output is a probability value between 0 and 1. The loss increases as the predicted probability diverges from the actual label.
+
+Question 2:
+In PyTorch, which method should be called to manually zero out gradients in the training loop of a feed-forward neural network?
+A) `.zero_grad()`
+B) `.clear_grad()`
+C) `.reset_grad()`
+D) `.detach_grad()`
+
+Explanation:
+A) `.zero_grad()` is the correct method to zero out the gradients in PyTorch, as accumulated gradient from previous iterations needs to be cleared to prevent mixing up during the optimization step.
+
+Question 3:
+Which PyTorch module is typically used to define a linear layer in a feed-forward neural network?
+A) `torch.nn.Linear`
+B) `torch.nn.Conv1d`
+C) `torch.nn.ReLU`
+D) `torch.nn.Functional`
+
+Explanation:
+A) `torch.nn.Linear` is the module used to define a linear layer within a feed-forward neural network. It applies a linear transformation to the incoming data.
+
+Question 4:
+When designing a feed-forward neural network for text classification, what is the typical role of an embedding layer in PyTorch?
+A) To reduce the dimensionality of the input features
+B) To convert sparse one-hot encoded vectors into dense embeddings
+C) To increase the sparsity of the input representation
+D) To perform max-pooling over the input features
+
+Explanation:
+B) An embedding layer converts sparse one-hot encoded vectors into dense embeddings, which can capture semantic information and relationships in a lower-dimensional space, which is beneficial for NLP tasks.
+
+Question 5:
+In PyTorch, which class would you use to create a dataset loader that can iterate over your dataset in mini-batches, shuffle the data, and allow using multiple workers to load the data?
+A) `torch.utils.data.TensorDataset`
+B) `torch.utils.data.DataLoader`
+C) `torch.nn.DataParallel`
+D) `torch.optim.Optimizer`
+
+Explanation:
+B) `torch.utils.data.DataLoader` is used to create a dataset loader which is capable of batching, shuffling, and parallel data loading by using multiple workers.
+
+Question 6:
+When training a feed-forward neural network in PyTorch, what is the purpose of calling `.backward()` on the loss?
+A) To perform a forward pass and calculate the current loss
+B) To compute the gradients of the loss with respect to the weights
+C) To update the weights of the model
+D) To initialize the weights of the model
+
+Explanation:
+B) The `.backward()` function computes the gradient of the loss function with respect to the model's weights, which is a crucial step in the model's training process before updating weights using gradient descent.
+
+Question 7:
+Why is the ReLU activation function preferred over the sigmoid function in hidden layers of feed-forward neural networks for NLP tasks?
+A) It amplifies the gradients during backpropagation to prevent vanishing gradient issues.
+B) It constrains the output to be between 0 and 1.
+C) It ensures that all neuron outputs will be negative.
+D) It introduces non-linearity with less computational complexity.
+
+Explanation:
+D) ReLU (Rectified Linear Unit) introduces non-linearity into the model while being computationally efficient and helping to mitigate the vanishing gradient problem that can occur with sigmoid functions in deep networks.
+
+Question 8:
+What is the effect of applying dropout in a feed-forward neural network during training in PyTorch?
+A) Increases the network's sensitivity to specific neurons
+B) Reduces overfitting by randomly setting a subset of activations to zero
+C) Encourages individual neurons to become more specialized
+D) Increases the dimensionality of the input features
+
+Explanation:
+B) Dropout is a regularization technique that reduces overfitting in neural networks by randomly setting a fraction of input units to 0 at each update during training, which helps to prevent neurons from co-adapting too much.
+
+Question 9:
+In a feed-forward neural network for NLP, if you have an input vocabulary size of 10,000 and you want to create 300-dimensional embeddings for each word, what should be the size of the weight matrix in the embedding layer in PyTorch?
+A) 3,000,000 (10,000 x 300)
+B) 300,000 (1,000 x 300)
+C) 10,300 (10,000 + 300)
+D) 30,000 (100 x 300)
+
+Explanation:
+A) The weight matrix in the embedding layer should be of size 3,000,000 (10,000 x 300), which is the product of the input vocabulary size and the embedding dimension.
+
+Question 10:
+Which optimizer is commonly recommended for training deep feed-forward neural networks in NLP with PyTorch?
+A) Stochastic Gradient Descent (SGD)
+B) RMSprop
+C) AdaGrad
+D) Adam
+
+Explanation:
+D) Adam is a commonly recommended optimizer for training deep feed-forward neural networks in NLP tasks because it combines the advantages of both AdaGrad and RMSprop optimizers, and it has been shown empirically to work well on a wide range of problems.

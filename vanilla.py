@@ -1,5 +1,5 @@
 """
-Advanced prompt engineering approach without context. 
+Advanced prompt engineering approaches without context. 
 """
 
 import openai
@@ -9,33 +9,49 @@ from datetime import datetime
 from dotenv import load_dotenv
 load_dotenv()
 
-PROMPT_FILE_PATH = "./prompts/vanilla-prompt.txt"
-RESPONSE_FILE_PATH = lambda timestamp: f"./responsebuffers/{timestamp} (vanilla).txt"
+# Zero Shot Prompting
+# PROMPT_FILE_PATH = "./prompts/vanilla-prompt-zero-shot.txt"
+# TOPIC = "Feed Forward Neural Networks in NLP using PyTorch"
+# RESPONSE_FILE_PATH = lambda timestamp: f"./responsebuffers/{timestamp} (vanilla-zero-shot).txt"
 
-openai.organization = os.getenv("OPENAI_ORGANIZATON")
-openai.api_key = os.getenv("OPENAI_API_KEY")
+# prompt = str()
+# with open(PROMPT_FILE_PATH, "r+") as file:
+#   prompt = file.read()
+#   prompt = prompt.replace("<<TOPIC>>", TOPIC)
+
+# Few Shot Prompting
+PROMPT_PREFACE_FILE_PATH = "./prompts/vaniila-prompt-few-shot-preface.txt"
+TOPIC = "Feed Forward Neural Networks in NLP using PyTorch"
+PROMPT_EXAMPLES_FILE_PATH = "./prompts/few-shot-examples.txt"
+RESPONSE_FILE_PATH = lambda timestamp: f"./responsebuffers/{timestamp} (vanilla-few-shot).txt"
 
 prompt = str()
-with open(PROMPT_FILE_PATH, "r+") as file:
+with open(PROMPT_PREFACE_FILE_PATH, "r+") as file:
   prompt = file.read()
+  prompt = prompt.replace("<<TOPIC>>", TOPIC)
 
-completion = openai.ChatCompletion.create(
-  model="gpt-4",
+with open(PROMPT_EXAMPLES_FILE_PATH, "r+") as file:
+  prompt += file.read()
+
+client = openai.OpenAI(api_key=os.getenv("OPENAI_API_KEY"), organization=os.getenv("OPENAI_ORGANIZATON"))
+
+completion = client.chat.completions.create(
+  model="gpt-4-1106-preview",
   messages=[
     {
       "role": "system",
-      "content": "You are a highly skilled subject matter expert in Natural Language Processing and a creative question architect.",
+      "content": f"You are a highly skilled subject matter expert in {TOPIC} and a creative question architect.",
     },
     {
       "role": "user", 
       "content": prompt
     },
   ],
-  temperature=1,
-  max_tokens=5000,
+  temperature=0.8,
+  max_tokens=4096,
 )
 
-response = completion["choices"][0]["message"]["content"]
+response = completion.choices[0].message.content
 
 with open(RESPONSE_FILE_PATH(datetime.now().strftime("%d-%m-%Y %H:%M:%S")), "w+") as file:
   file.write(response)

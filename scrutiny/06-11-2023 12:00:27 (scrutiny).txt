@@ -1,0 +1,69 @@
+Question 1:
+- Relevance: High
+- Plausibility: High
+- Difficulty: Low
+- Quality: High
+- Category: Factual Recall
+
+Question 2:
+- Relevance: High
+- Plausibility: High
+- Difficulty: Medium
+- Quality: High
+- Category: Factual Recall
+
+Question 3:
+- Relevance: High
+- Plausibility: High
+- Difficulty: Low
+- Quality: High
+- Category: Factual Recall
+
+Question 4:
+- Relevance: High
+- Plausibility: High
+- Difficulty: Medium
+- Quality: High
+- Category: Conceptual Understanding
+
+Question 5:
+- Relevance: Medium (The question is about CNNs, not directly about Feed Forward Neural Networks)
+- Plausibility: High
+- Difficulty: Medium
+- Quality: Medium
+- Category: Conceptual Understanding
+
+Question 6:
+- Relevance: High
+- Plausibility: High
+- Difficulty: Medium
+- Quality: High
+- Category: Application
+
+Question 7:
+- Relevance: High
+- Plausibility: High
+- Difficulty: Medium
+- Quality: High
+- Category: Conceptual Understanding
+
+Question 8:
+- Relevance: High
+- Plausibility: High
+- Difficulty: Medium
+- Quality: High
+- Category: Application
+
+Question 9:
+- Relevance: High
+- Plausibility: High
+- Difficulty: Medium
+- Quality: High
+- Category: Conceptual Understanding
+
+Question 10:
+- Relevance: High
+- Plausibility: High
+- Difficulty: Medium
+- Quality: High
+- Category: Conceptual Understanding

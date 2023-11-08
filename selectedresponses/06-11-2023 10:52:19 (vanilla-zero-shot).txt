@@ -1,0 +1,99 @@
+Question 1:
+In a feedforward neural network used for NLP tasks, if the input layer has 100 neurons and the hidden layer has 50 neurons, how many weights are there between these two layers?
+A) 5000
+B) 150
+C) 5050
+D) 100
+
+Explanation:
+The number of weights is determined by multiplying the number of neurons in the previous layer by the number of neurons in the next layer. Therefore, with 100 neurons in the input layer and 50 neurons in the hidden layer, there are 100 * 50 = 5000 weights.
+
+Question 2:
+Which activation function is typically used for the output layer in a feedforward neural network for a binary classification task in NLP?
+A) ReLU
+B) Softmax
+C) Sigmoid
+D) Tanh
+
+Explanation:
+For binary classification tasks, the sigmoid activation function is typically used in the output layer because it squashes the output to be between 0 and 1, which can be interpreted as probabilities.
+
+Question 3:
+What is the primary role of the loss function in training a feedforward neural network for NLP tasks?
+A) To determine the learning rate
+B) To regularize the network
+C) To optimize the weights during training
+D) To initialize the weights
+
+Explanation:
+The loss function is used to optimize the weights during training by providing a measure of how well the neural network is performing. It quantifies the difference between the predicted outputs and the actual outputs.
+
+Question 4:
+When using PyTorch to create a feedforward neural network for an NLP task, which class is commonly subclassed to define the architecture of the model?
+A) torch.Tensor
+B) torch.nn.Module
+C) torch.optim.Optimizer
+D) torch.nn.Parameter
+
+Explanation:
+In PyTorch, the torch.nn.Module class is subclassed to define a neural network's architecture, including its layers and forward method.
+
+Question 5:
+What is the purpose of the `torch.nn.Embedding` layer in a PyTorch feedforward neural network for NLP?
+A) To reduce the dimensionality of the input data
+B) To perform max pooling on textual input
+C) To create word embeddings from input token indices
+D) To encode the position of tokens in a sequence
+
+Explanation:
+The torch.nn.Embedding layer is used to create word embeddings from input token indices. It maps each token index to a dense vector of fixed size.
+
+Question 6:
+In the context of NLP, when would you use a feedforward neural network over a recurrent neural network?
+A) When the input data is sequential
+B) When the importance of word order is minimal
+C) When you need to capture long-term dependencies
+D) When you want to generate text
+
+Explanation:
+Feedforward neural networks are typically used when the importance of word order is minimal because they do not capture the sequential nature of text. Recurrent neural networks are more suitable for sequential data or when long-term dependencies are important.
+
+Question 7:
+Consider a multi-class classification problem in NLP. What would be the most suitable activation function for the output layer of a feedforward neural network?
+A) ReLU
+B) Softmax
+C) Sigmoid
+D) Leaky ReLU
+
+Explanation:
+The Softmax activation function is suitable for multi-class classification problems because it converts the output of the network into probability distributions over the predicted classes.
+
+Question 8:
+Which of the following optimizers is NOT typically used in PyTorch for training feedforward neural networks for NLP tasks?
+A) Adam
+B) SGD (Stochastic Gradient Descent)
+C) RMSprop
+D) K-means
+
+Explanation:
+K-means is a clustering algorithm and not an optimizer used for training neural networks. Adam, SGD, and RMSprop are all optimizers that can be used in PyTorch to train neural networks.
+
+Question 9:
+If the learning rate of an optimizer in PyTorch is set too high, what is the most likely consequence during the training of a feedforward neural network for NLP?
+A) The model will underfit the training data
+B) The model will converge too slowly
+C) The model may diverge or overshoot minima
+D) The model will always achieve perfect accuracy
+
+Explanation:
+If the learning rate is set too high, the model may diverge or overshoot the minima of the loss function, resulting in unstable training and poor performance.
+
+Question 10:
+When initializing weights of a feedforward neural network in PyTorch for NLP tasks, which method helps in preventing the vanishing or exploding gradient problem?
+A) Zero initialization
+B) Xavier/Glorot initialization
+C) Initializing all weights to one
+D) Random initialization from a uniform distribution [0, 1]
+
+Explanation:
+Xavier/Glorot initialization is a method specifically designed to keep the scale of the gradients roughly the same in all layers, helping to prevent the vanishing or exploding gradient problem. It is especially useful when using activation functions like tanh or sigmoid.

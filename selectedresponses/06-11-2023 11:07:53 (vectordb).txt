@@ -1,0 +1,99 @@
+Question 1: 
+What is a "feed-forward" network in the context of neural networks?
+A) A network where data flows in multiple directions
+B) A network where data flows in one direction, from input to output
+C) A network where data flows in a cyclic manner
+D) A network where data flows from output to input
+
+Explanation:
+A "feed-forward" network is any neural network in which the data flows in one direction, from input to output.
+
+Question 2:
+In PyTorch terminology, what is a tensor?
+A) A special case of a vector
+B) A type of neural network
+C) A type of loss function
+D) A type of optimizer
+
+Explanation: 
+In PyTorch terminology, a tensor is a multi-dimensional container of data. A vector is a special case of a tensor.
+
+Question 3:
+What is the common practice in deep learning literature regarding fully connected layers?
+A) They are numbered from right to left
+B) They are numbered from top to bottom
+C) They are numbered from left to right
+D) They are not numbered
+
+Explanation:
+In deep learning literature, if there is more than one fully connected layer, they are numbered from left to right as fc-1, fc-2, and so on.
+
+Question 4:
+What is a "representation vector" also sometimes called?
+A) Input vector
+B) Output vector
+C) Linear vector
+D) Loss vector
+
+Explanation:
+A "representation vector" is sometimes also called a "feature vector".
+
+Question 5:
+What does the PyTorch documentation state about loss functions?
+A) All loss functions expect a pre-softmax prediction vector
+B) No loss functions expect a pre-softmax prediction vector
+C) Some loss functions expect a pre-softmax prediction vector and some don't
+D) The documentation does not mention anything about loss functions
+
+Explanation:
+The PyTorch documentation states that some loss functions expect a pre-softmax prediction vector and some don't.
+
+Question 6:
+What is the significance of character-level models in recent research?
+A) They can improve word-level models
+B) They can replace word-level models
+C) They are less efficient than word-level models
+D) They are more complex than word-level models
+
+Explanation:
+Recent research has shown that incorporating character-level models can improve word-level models.
+
+Question 7:
+What is the purpose of using UNKs in the data splits provided?
+A) To increase the complexity of the model
+B) To prevent the training from breaking due to unique characters in the validation data set
+C) To improve the accuracy of the model
+D) To reduce the size of the data set
+
+Explanation:
+In the data splits provided, there are unique characters in the validation data set that will break the training if UNKs are not used.
+
+Question 8:
+What is the significance of the output summing to 1 in the context of probabilities?
+A) It indicates that these are true posterior probabilities in a Bayesian sense
+B) It indicates that these are not true posterior probabilities in a Bayesian sense
+C) It indicates that the probabilities are invalid
+D) It indicates that the probabilities are negative
+
+Explanation:
+We intentionally put probabilities in quotation marks just to emphasize that these are not true posterior probabilities in a Bayesian sense, but since the output sums to 1 it is a valid distribution and hence can be interpreted as probabilities.
+
+Question 9:
+What is the number of parameters for the input-hidden layer if an MLP takes as input character bigrams for the 26 characters in English and has a hidden layer of 100 nodes?
+A) 2600
+B) 325
+C) 32500
+D) 260000
+
+Explanation:
+For the 26 characters in English, the number of character bigrams is 325. So, if we have a hidden layer of 100 nodes, the number of parameters for the input-hidden layer will be 325 * 100 = 32500.
+
+Question 10:
+What is the purpose of convolutional filters in image-editing programs such as Photoshop?
+A) To reduce the size of the image
+B) To increase the size of the image
+C) To highlight edges
+D) To blur the image
+
+Explanation:
+Many filters in image-editing programs such as Photoshop operate by doing this. For example, you can highlight edges using a convolutional filter specifically designed for that purpose.

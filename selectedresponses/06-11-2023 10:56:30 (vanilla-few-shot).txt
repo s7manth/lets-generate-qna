@@ -1,0 +1,79 @@
+Question 3:
+In PyTorch, when defining a Feed Forward Neural Network for NLP, the `forward` method is used to:
+A) Initialize the weights and biases of the network.
+B) Specify the architecture of the network.
+C) Pass input data through the network and obtain the output.
+D) Update the weights during backpropagation.
+
+Explanation:
+C) The `forward` method in a PyTorch module is used to define how the input data is passed through the network, specifying the sequence of operations that the data will undergo to produce the output. This method is called by PyTorch during the forward pass of the network.
+
+Question 4:
+Which of the following elements is NOT a typical component of a feed-forward neural network layer in NLP tasks?
+A) Activation function
+B) Dropout
+C) Recurrent loops
+D) Weight matrix
+
+Explanation:
+C) Recurrent loops are not a component of feed-forward neural networks but are characteristic of recurrent neural networks (RNNs). Feed-forward networks consist of layers that process the input data in a single pass from input to output without any loops.
+
+Question 5:
+What is the purpose of using an activation function like ReLU in the hidden layers of a feed-forward neural network in NLP?
+A) To ensure that the output of the network is a probability distribution.
+B) To allow the network to learn non-linear relationships.
+C) To reduce overfitting by randomly setting activations to zero.
+D) To compress the input features into a lower-dimensional space.
+
+Explanation:
+B) Activation functions like ReLU (Rectified Linear Unit) introduce non-linearity to the model, which allows the network to learn complex, non-linear relationships between the input features and the output. Without non-linearity, the network would only be able to model linear relationships regardless of the number of layers.
+
+Question 6:
+What does the term "epoch" refer to in the context of training a feed-forward neural network in NLP using PyTorch?
+A) A single pass through the entire training dataset.
+B) The process of updating the weights of the neural network.
+C) One step of gradient descent.
+D) The initialization of the neural network's parameters.
+
+Explanation:
+A) An epoch refers to one complete pass through the entire training dataset. During an epoch, the network will have processed each example in the dataset once.
+
+Question 7:
+In PyTorch, how does the `nn.CrossEntropyLoss` work for classification tasks?
+A) It applies a softmax function to the output layer and then calculates the mean squared error.
+B) It takes the log softmax of the output layer and then computes the negative log likelihood loss.
+C) It directly compares the output layer's logits to the one-hot encoded target values.
+D) It uses a hinge loss function to maximize the margin between classes.
+
+Explanation:
+B) `nn.CrossEntropyLoss` in PyTorch combines `log_softmax` and `nll_loss` (negative log likelihood loss) in a single class. It first applies the log softmax function to the output layer to obtain log probabilities and then computes the negative log likelihood of the target classes.
+
+Question 8:
+When training a feed-forward neural network in PyTorch, what is the purpose of the `optimizer.zero_grad()` call?
+A) To initialize the network's gradients to zero before each weight update.
+B) To manually set the gradients to zero after updating the weights.
+C) To zero out the output of the neural network before the forward pass.
+D) To clear the accumulated loss from the previous batch.
+
+Explanation:
+A) The `optimizer.zero_grad()` call is used to set the gradients of all optimized `torch.Tensor`s to zero before the backward pass. This is necessary because gradients are accumulated in PyTorch by default.
+
+Question 9:
+Which of the following learning rate schedules could be used to adjust the learning rate during training of a feed-forward neural network in PyTorch?
+A) Exponential increase
+B) Cyclical learning rate
+C) Constant learning rate
+D) Learning rate clipping
+
+Explanation:
+B) A cyclical learning rate schedule varies the learning rate between two boundaries with a certain policy (e.g., triangular, sinusoidal), which can help in finding better minima during training. While a constant learning rate is also a valid schedule, it doesn't adjust the learning rate over time. Exponential increase and learning rate clipping are not standard learning rate schedules.
+
+Question 10:
+In a feed-forward neural network for NLP, what is the effect of increasing the batch size during training?
+A) Decreases the generalization ability of the model.
+B) Increases the variance of the weight updates.
+C) Reduces the training time per epoch.
+D) Guarantees a better convergence to the global minimum.
+
+Explanation:
+C) Increasing the batch size means that more samples are processed together in one pass of gradient descent, which can reduce the number of updates needed and thus the training time per epoch. However, it does not necessarily decrease generalization ability or guarantee better convergence. Increasing batch size might actually reduce the variance of the weight updates since the gradient estimate is averaged over more samples.

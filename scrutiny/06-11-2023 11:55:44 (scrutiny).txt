@@ -1,0 +1,69 @@
+Question 1:
+- Relevance: High
+- Plausibility: High
+- Difficulty: Low
+- Quality: High
+- Category: Factual Recall
+
+Question 2:
+- Relevance: High
+- Plausibility: High
+- Difficulty: Low
+- Quality: High
+- Category: Factual Recall
+
+Question 3:
+- Relevance: High
+- Plausibility: High
+- Difficulty: Medium
+- Quality: High
+- Category: Factual Recall
+
+Question 4:
+- Relevance: Medium
+- Plausibility: High
+- Difficulty: Medium
+- Quality: High
+- Category: Factual Recall
+
+Question 5:
+- Relevance: High
+- Plausibility: High
+- Difficulty: Medium
+- Quality: High
+- Category: Factual Recall
+
+Question 6:
+- Relevance: High
+- Plausibility: High
+- Difficulty: High
+- Quality: High
+- Category: Conceptual Understanding
+
+Question 7:
+- Relevance: High
+- Plausibility: High
+- Difficulty: High
+- Quality: High
+- Category: Application
+
+Question 8:
+- Relevance: High
+- Plausibility: High
+- Difficulty: High
+- Quality: High
+- Category: Conceptual Understanding
+
+Question 9:
+- Relevance: High
+- Plausibility: High
+- Difficulty: High
+- Quality: High
+- Category: Application
+
+Question 10:
+- Relevance: Low
+- Plausibility: High
+- Difficulty: Medium
+- Quality: Medium
+- Category: Out of Scope

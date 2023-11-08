@@ -1,0 +1,48 @@
+Context:
+<<CONTEXT>>
+
+Using the context provided, generate 10 multiple choice questions with at least 4 options each. Ensure each question is relevant to the context and has a single correct answer. Provide explanations for why the correct option is correct. Follow these guidelines:
+- The questions should be clear, concise and cover key concepts from the context. Avoid vague or opinion-based questions. 
+- The incorrect options should seem plausible but be clearly incorrect upon closer inspection. Do not use obviously wrong options.
+- The explanations should clearly justify why the correct option is right based on information in the context.
+- The questions and options should be free of spelling, grammar and factual errors.
+- The questions should be varied in topic and style. Do not repeat similar phrasing or approaches multiple times.
+- The questions should increase in difficulty/complexity as the set progresses.
+- The correct answer should be randomized in position for each question.
+- Give me a mix of numerical and theoritical questions. 
+- Remember that these questions are for advanced undergraduate courses in Computer Science. 
+
+Question 1: 
+<QUESTION_1>
+A) 
+B)
+C) 
+D)
+
+Explanation:
+<EXPLANATION_1>
+
+Question 2:
+<QUESTION_2> 
+A)
+B)  
+C)
+D)
+
+Explanation: 
+<EXPLANATION_2>
+
+...
+
+Question 10: 
+<QUESTION_10>
+A)  
+B)
+C)
+D) 
+
+Explanation:
+<EXPLANATION_10>
+
+Note: Please ensure the questions are challenging yet solvable for advanced undergraduate students. 
+Please just give me the questions. No need to give me other peripheral text. 

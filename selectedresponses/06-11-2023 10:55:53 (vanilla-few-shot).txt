@@ -1,0 +1,99 @@
+Question 1:
+When initializing weights for layers in a feed-forward neural network in PyTorch, which of the following methods can help prevent vanishing or exploding gradients during training?
+A) Zero Initialization
+B) Random Normal Initialization with large variance
+C) Xavier/Glorot Initialization
+D) Fixed Value Initialization (e.g., all weights set to 1.0)
+
+Explanation:
+C) Xavier/Glorot Initialization is designed to keep the scale of the gradients roughly the same in all layers. It sets the weights to values taken from a distribution with a variance that depends on the number of input and output neurons, which helps prevent the gradients from vanishing or exploding at the start of training.
+
+Question 2:
+In the context of NLP using feed-forward neural networks, what is the primary advantage of using ReLU (Rectified Linear Unit) as an activation function over sigmoid functions?
+A) ReLU makes the model linear
+B) ReLU can have negative output values
+C) ReLU helps mitigate the vanishing gradient problem
+D) ReLU always outputs zero, simplifying the calculations
+
+Explanation:
+C) ReLU (Rectified Linear Unit) helps mitigate the vanishing gradient problem because it does not saturate in the positive domain, as opposed to sigmoid functions which can cause gradients to vanish during backpropagation when their outputs are very close to 0 or 1.
+
+Question 3:
+In NLP, when dealing with a large vocabulary, why is it generally advised to use a smaller dimension for word embeddings in a feed-forward neural network?
+A) Larger embeddings improve the model's accuracy
+B) Smaller embeddings reduce the risk of overfitting
+C) Smaller embeddings allow for faster network training
+D) Larger embeddings require less memory
+
+Explanation:
+B) Smaller embeddings can help reduce the risk of overfitting, especially when working with a large vocabulary and limited training data. Overfitting occurs when the model becomes too tailored to the training data and fails to generalize well to unseen data.
+
+Question 4:
+Which PyTorch class is typically used to implement a feed-forward neural network layer with a linear transformation followed by an activation function?
+A) nn.Linear
+B) nn.ReLU
+C) nn.Sequential
+D) nn.Module
+
+Explanation:
+C) nn.Sequential in PyTorch is used to create a sequential container of modules where the output of one module is the input to the next. It can be used to combine layers such as nn.Linear (a linear transformation) and nn.ReLU (an activation function) into a single unit.
+
+Question 5:
+When training a feed-forward neural network for an NLP task, how does increasing the batch size generally affect the gradient descent process?
+A) It increases the variance of the gradient estimates
+B) It decreases the variance of the gradient estimates
+C) It ensures convergence to the global minimum at every step
+D) It reduces the overall number of epochs required for training
+
+Explanation:
+B) Increasing the batch size generally decreases the variance of the gradient estimates because the gradients are computed over more examples, leading to a more accurate estimate of the true gradient. However, this may also require more memory and can slow down each iteration.
+
+Question 6:
+What is the primary role of the loss function in a feed-forward neural network for NLP tasks?
+A) To activate neurons in hidden layers
+B) To determine the performance of the model on the training data
+C) To initialize the weights of the network
+D) To encode the input data into embeddings
+
+Explanation:
+B) The loss function determines the performance of the model on the training data, quantifying how well the model's predictions match the actual target values. The network's weights are adjusted to minimize the value of the loss function during training.
+
+Question 7:
+A feed-forward neural network is being used for a text classification task in NLP with PyTorch. What is the effect of applying dropout after a layer in the network?
+A) It increases the computation time for each epoch
+B) It acts as a form of regularization to prevent overfitting
+C) It forces the network to become deeper
+D) It increases the model's bias
+
+Explanation:
+B) Dropout is a form of regularization used to prevent overfitting in neural networks. By randomly setting a fraction of the output features of a layer to zero during training, it forces the network to learn more robust features that are not reliant on any small set of neurons.
+
+Question 8:
+Which component of a feed-forward neural network in NLP is responsible for adjusting the strength of connections between neurons based on the error signal?
+A) Activation function
+B) Loss function
+C) Optimizer
+D) Embedding layer
+
+Explanation:
+C) The optimizer is responsible for adjusting the strength of connections between neurons, which is represented by the weights in the network, based on the error signal derived from the loss function. The optimizer updates the weights to minimize the loss.
+
+Question 9:
+In a feed-forward neural network used for NLP, what is the likely impact of using a very high learning rate during training?
+A) The network will learn faster and reach higher accuracy
+B) The network may miss the global minimum due to large updates
+C) The network will converge to the global minimum more steadily
+D) The learning rate has no impact on the training process
+
+Explanation:
+B) If the learning rate is too high, the network may miss the global minimum because the weight updates are too large and can overshoot the minimum point of the loss function. This can lead to divergence or erratic behavior in the training process.
+
+Question 10:
+In PyTorch, which method should be called to reset gradients to zero before starting a new iteration of backpropagation during training?
+A) `optimizer.step()`
+B) `optimizer.zero_grad()`
+C) `loss.backward()`
+D) `model.forward()`
+
+Explanation:
+B) `optimizer.zero_grad()` is used to reset gradients to zero in PyTorch before starting a new iteration of backpropagation. This is necessary because gradients by default add up; to prevent accumulation of gradients from multiple forward passes, we zero them before each new update.

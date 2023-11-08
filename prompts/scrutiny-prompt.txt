@@ -1,0 +1,48 @@
+Below are some multiple choice questions that have been generated
+for the following topic. 
+
+<<TOPIC>>
+
+Please carefully read each question and answer options. 
+Then, provide an assessment of each question based on the following criteria:
+
+- Relevance: How relevant is the question to the target topic scope? 
+  Respond with 'High', 'Medium', or 'Low' relevance.
+
+- Plausibility: How logically plausible is the question and options? 
+  Respond with 'High', 'Medium', or 'Low' plausibility.
+
+- Difficulty: How difficult is the reasoning required to answer correctly? 
+  Respond with 'High', 'Medium' or 'Low' difficulty level.
+
+- Quality: What is the overall quality of the question? 
+  Respond with 'High', 'Medium', or 'Low' quality.
+
+- Category: What type of knowledge or reasoning does the question test? 
+  Choose from 'Factual Recall', 'Conceptual Understanding', 'Application', 
+  'Critical Thinking' or 'Out of Scope'.
+
+Provide your assessment criteria responses for each of the following questions:
+
+<<QUESTIONS>>
+
+When evaluating, please:
+- Check if the question stem clearly presents a focused problem or 
+  scenario relevant to the topic.
+- Verify the answer choices are plausible but only one option is the 
+  best/correct answer.
+- Ensure the explanation logically supports the correct answer and 
+  clearly explains why it is correct.
+- Look for any ambiguities, errors, or inconsistencies in the question 
+  stem, answer choices or explanation. 
+- If needed, suggest modifications to the question stem or choices to 
+  make the question more difficult and better test student knowledge. 
+- Do not change the intended concept being tested, only increase the 
+  challenge or improve the quality.
+- Provide a revised question stem, choices and explanation if you recommend 
+  modifications. 
+
+1 - Relevance: High, Plausibility: Medium, ..., Category: Factual Recall
+2 - Relevance: Low, Plausibility: Medium, ..., Category: Application
+3 - Not Okay, Category: Out of Scope/Incorrect 
+...

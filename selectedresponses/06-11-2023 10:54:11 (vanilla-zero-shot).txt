@@ -1,0 +1,99 @@
+Question 1:
+In a feed-forward neural network used for NLP tasks in PyTorch, what is the role of the `nn.Embedding` layer?
+A) To reduce the dimensionality of input data
+B) To encode categorical variables as one-hot vectors
+C) To map word tokens to vectors of fixed size
+D) To perform normalization of word vectors
+
+Explanation:
+C) The `nn.Embedding` layer in PyTorch is used to map word tokens (usually represented as integer indices) to vectors of a fixed size. This is a form of a lookup table where each unique token is associated with a vector, and it serves as a trainable layer in the network.
+
+Question 2:
+When using a feed-forward neural network for classification in NLP, what is the purpose of applying a softmax function in the final layer?
+A) To convert the output to binary values
+B) To select the neuron with the maximum value as the output
+C) To amplify the activation of neurons
+D) To transform the output into a probability distribution over predicted output classes
+
+Explanation:
+D) The softmax function is applied to the final layer of a feed-forward neural network in classification tasks to transform the raw output scores (logits) into a probability distribution over the predicted output classes. It ensures that all outputs sum to 1 and can be interpreted as probabilities.
+
+Question 3:
+In PyTorch, which loss function is typically used for multi-class classification tasks in feed-forward neural networks?
+A) nn.L1Loss
+B) nn.BCELoss
+C) nn.CrossEntropyLoss
+D) nn.MSELoss
+
+Explanation:
+C) `nn.CrossEntropyLoss` is the common loss function used for multi-class classification tasks in feed-forward neural networks. It combines a softmax layer with the negative log-likelihood loss.
+
+Question 4:
+What is the effect of increasing the number of hidden layers in a feed-forward neural network for NLP tasks?
+A) It always increases the training speed.
+B) It reduces the number of parameters in the model.
+C) It enables the model to capture more complex patterns in the data.
+D) It decreases the likelihood of overfitting.
+
+Explanation:
+C) Increasing the number of hidden layers in a neural network allows the model to capture more complex patterns and relationships in the data, potentially improving its ability to generalize if properly regularized.
+
+Question 5:
+In the context of NLP using feed-forward neural networks, what is one potential drawback of using a very large vocabulary size?
+A) Decreased model accuracy
+B) Increased risk of underfitting
+C) Reduced training time
+D) Increased memory usage and computational costs
+
+Explanation:
+D) A very large vocabulary size increases the memory usage and computational costs, as it requires a larger embedding matrix and subsequently larger weight matrices in the network.
+
+Question 6:
+Which PyTorch class is primarily used to define a custom feed-forward neural network for NLP tasks?
+A) nn.Module
+B) nn.Functional
+C) nn.Parameter
+D) nn.Sequential
+
+Explanation:
+A) In PyTorch, `nn.Module` is the base class used for defining a custom neural network. It provides functionality for keeping track of parameters and moving them to the GPU, among other things.
+
+Question 7:
+Assuming a feed-forward neural network is being used for a text classification task, how would you typically preprocess the text data before feeding it into the network?
+A) Convert the text to uppercase to standardize it
+B) Use a tokenizer to split the text into words or subwords
+C) Remove all punctuation for simplicity
+D) Translate the text into a universal language like Esperanto
+
+Explanation:
+B) Using a tokenizer to split the text into words or subwords is a standard preprocessing step in NLP to convert raw text data into a form that can be fed into a neural network for tasks like classification.
+
+Question 8:
+What is the primary function of the `optimizer.step()` call in PyTorch when training a feed-forward neural network?
+A) To calculate the loss function
+B) To initialize the model's parameters
+C) To apply the gradients computed during backpropagation to update the model's parameters
+D) To increase the learning rate after each epoch
+
+Explanation:
+C) The `optimizer.step()` function in PyTorch is used to apply the gradients computed during backpropagation to update the model's parameters. This is an essential step in the training loop.
+
+Question 9:
+In a feed-forward neural network for NLP, if the input feature vectors are sparse, what technique can be applied to make training more efficient?
+A) Increase the learning rate
+B) Use a larger batch size
+C) Apply dropout to the input layer
+D) Use weight initialization techniques that consider the sparsity
+
+Explanation:
+D) Using weight initialization techniques that consider the sparsity of input feature vectors, such as sparse initializations, can make training more efficient by ensuring that the initial weights are better suited for the data distribution.
+
+Question 10:
+Why might a rectified linear unit (ReLU) activation function be preferred over a sigmoid activation function in the hidden layers of a feed-forward neural network for NLP?
+A) ReLU can output a true zero value, which allows for the representation of non-activated neurons and helps mitigate vanishing gradient issues.
+B) Sigmoid functions are computationally more expensive than ReLUs.
+C) ReLU always leads to faster convergence during training.
+D) ReLU functions are linear, which simplifies the model.
+
+Explanation:
+A) The rectified linear unit (ReLU) is often preferred over the sigmoid because it can output a true zero value, which allows for the representation of non-activated neurons (sparsity) and can help mitigate vanishing gradient issues. This is especially useful in deeper networks.

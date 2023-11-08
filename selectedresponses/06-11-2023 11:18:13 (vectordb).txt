@@ -1,0 +1,99 @@
+Question 1: 
+What is the main limitation of a perceptron as discussed in the context?
+A) It cannot process large datasets
+B) It cannot learn nontrivial patterns present in data
+C) It cannot handle multidimensional data
+D) It cannot be used for classification tasks
+
+Explanation:
+The context mentions that one of the historic downfalls of the perceptron was that it cannot learn modestly nontrivial patterns present in data.
+
+Question 2:
+What is the main structural difference between a multilayer perceptron (MLP) and a simple perceptron?
+A) MLP uses different activation functions
+B) MLP groups many perceptrons in a single layer and stacks multiple layers together
+C) MLP uses a different learning algorithm
+D) MLP can only process binary data
+
+Explanation: 
+The context states that the multilayer perceptron structurally extends the simpler perceptron by grouping many perceptrons in a single layer and stacking multiple layers together.
+
+Question 3:
+What is the key feature of Convolutional Neural Networks (CNNs) that makes them suitable for detecting substructures in sequential data?
+A) They use a large number of layers
+B) They are deeply inspired by windowed filters in the processing of digital signals
+C) They use a different activation function
+D) They are faster to train than other neural networks
+
+Explanation: 
+The context mentions that CNNs, through their windowing property, are able to learn localized patterns in their inputs, making them ideal for detecting substructures in sequential data.
+
+Question 4:
+What is a tensor in the context of PyTorch?
+A) A type of neural network
+B) A mathematical object holding some multidimensional data
+C) A function for processing data
+D) A type of activation function
+
+Explanation: 
+The context defines a tensor as a mathematical object holding some multidimensional data.
+
+Question 5:
+What is a 1st-order tensor equivalent to?
+A) A scalar
+B) A matrix
+C) An array of numbers, or a vector
+D) A 3-dimensional array
+
+Explanation: 
+The context mentions that a 1st-order tensor is an array of numbers, or a vector.
+
+Question 6:
+What is the recommended Python version for installing PyTorch?
+A) 2.7
+B) 3.0
+C) 3.5+
+D) 4.0
+
+Explanation: 
+The context recommends using Python version 3.5+ for installing PyTorch.
+
+Question 7:
+What is the XOR problem in the context of perceptrons?
+A) A problem where the decision boundary can be a single straight line
+B) A problem where the decision boundary cannot be a single straight line
+C) A problem where the data is not linearly separable
+D) Both B and C
+
+Explanation: 
+The context describes the XOR problem as a situation where the decision boundary cannot be a single straight line, which is equivalent to the data not being linearly separable.
+
+Question 8:
+What is the main application of Convolutional Neural Networks (CNNs) as mentioned in the context?
+A) Speech recognition
+B) Text generation
+C) Computer vision
+D) Reinforcement learning
+
+Explanation: 
+The context mentions that CNNs have made them the workhorse of computer vision.
+
+Question 9:
+What is the command to install PyTorch in a Conda environment as per the context?
+A) pip install pytorch torchvision
+B) conda install pytorch torchvision -c pytorch
+C) pip install pytorch
+D) conda install pytorch
+
+Explanation: 
+The context provides the command "conda install pytorch torchvision -c pytorch" to install PyTorch in a Conda environment.
+
+Question 10:
+What is a 0th-order tensor equivalent to?
+A) A scalar
+B) A vector
+C) A matrix
+D) A 3-dimensional array
+
+Explanation: 
+The context mentions that a tensor of order zero is just a number, or a scalar.

@@ -1,0 +1,79 @@
+Question 3:
+When initializing weights in a feed-forward neural network for NLP tasks, why is it generally a good practice to avoid initializing all weights to the same value?
+A) It can lead to redundant neuron behavior and slow down training.
+B) It can cause the optimizer to get stuck in local minima.
+C) It can lead to an imbalance in the distribution of activations.
+D) It prevents learning as gradients will be the same for every neuron, leading to the problem of symmetric weight updates.
+
+Explanation:
+D) Initializing all weights to the same value can prevent effective learning because it causes every neuron to learn the same features during training, known as the problem of symmetric weight updates. If all weights are updated identically on each training step, then the neurons will continue to behave identically, hindering the network's ability to learn diverse features.
+
+Question 4:
+In PyTorch, which loss function is typically used for multi-class classification tasks in a feed-forward neural network?
+A) nn.MSELoss
+B) nn.BCELoss
+C) nn.CrossEntropyLoss
+D) nn.L1Loss
+
+Explanation:
+C) `nn.CrossEntropyLoss` is the PyTorch loss function commonly used for multi-class classification tasks in feed-forward neural networks. It combines `nn.LogSoftmax` and `nn.NLLLoss` (negative log likelihood loss) in one single class, which is useful for training a classification problem with `C` classes.
+
+Question 5:
+What is the primary disadvantage of using a deep feed-forward neural network with many layers for NLP tasks?
+A) It can lead to underfitting due to insufficient model complexity.
+B) It can increase training speed exponentially.
+C) It can require less training data.
+D) It can lead to overfitting and difficulties in training due to the vanishing gradient problem.
+
+Explanation:
+D) A deep feed-forward neural network with many layers can lead to overfitting, where the network learns the training data too well, including the noise, resulting in poor generalization to new data. Additionally, deep networks can encounter difficulties in training due to the vanishing gradient problem, where gradients become smaller as they propagate back through the layers, making it hard to update the weights in the earlier layers.
+
+Question 6:
+Which operation in a feed-forward neural network is responsible for introducing non-linearity into the model?
+A) The linear transformation (e.g., `nn.Linear` in PyTorch)
+B) The activation function (e.g., ReLU, Sigmoid)
+C) The loss function (e.g., CrossEntropyLoss)
+D) The normalization step (e.g., BatchNorm)
+
+Explanation:
+B) The activation function is responsible for introducing non-linearity into the model. Without non-linearity, a feed-forward neural network, regardless of its depth, would behave just like a linear model. Common activation functions include ReLU (Rectified Linear Unit) and Sigmoid.
+
+Question 7:
+What is the effect of applying dropout in a feed-forward neural network during training?
+A) It increases the number of parameters in the network.
+B) It prevents certain neurons from co-adapting too closely.
+C) It accelerates the training process by skipping unnecessary computations.
+D) It ensures that all neurons contribute equally to the final output.
+
+Explanation:
+B) Dropout is a regularization technique that prevents overfitting by randomly setting a fraction of the input units to 0 during each training iteration. This forces the network to learn more robust features that are useful in conjunction with many different random subsets of the other neurons, preventing neurons from co-adapting too closely.
+
+Question 8:
+When designing a feed-forward neural network for an NLP task, what is the impact of increasing the batch size during training?
+A) It decreases the memory requirements of the training process.
+B) It reduces the variance of the gradient estimates and can lead to faster convergence.
+C) It makes the model more prone to falling into local minima.
+D) It increases the likelihood of overfitting to the training data.
+
+Explanation:
+B) Increasing the batch size reduces the variance of the gradient estimates, which can lead to faster convergence, as each update is more representative of the true gradient. However, it also increases the memory requirements and may cause the training process to use more computational resources.
+
+Question 9:
+In PyTorch, what is the consequence of setting `requires_grad=True` for a tensor used in a feed-forward neural network?
+A) PyTorch will not track operations on this tensor, and no gradients will be calculated.
+B) This setting is irrelevant and has no impact on the tensor or its operations.
+C) PyTorch will track all operations on this tensor, and gradients will be calculated during backpropagation.
+D) This setting will freeze the tensor, preventing its values from being updated during training.
+
+Explanation:
+C) Setting `requires_grad=True` for a tensor in PyTorch means that PyTorch will track all operations on this tensor, and during backpropagation, gradients will be automatically calculated, which is necessary for learning.
+
+Question 10:
+Why is it important to shuffle the training data when training a feed-forward neural network for NLP tasks?
+A) To ensure that the model sees examples from all classes in every batch.
+B) To prevent the model from learning the sequence of the training data.
+C) To decrease the training time by avoiding unnecessary computations.
+D) To enable the use of batch normalization effectively.
+
+Explanation:
+B) Shuffling the training data is important to prevent the model from learning the order of the data, which could be an artifact and not a generalizable feature. It ensures that each training batch is a random sample of the data, which helps improve the generalization of the model.

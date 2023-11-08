@@ -1,0 +1,99 @@
+Question 1:
+Which PyTorch class is typically used to construct a feed-forward neural network for NLP tasks?
+A) torch.Tensor
+B) torch.nn.Module
+C) torch.optim
+D) torch.Dataset
+
+Explanation:
+B) torch.nn.Module is the correct answer. In PyTorch, `torch.nn.Module` is the base class for all neural network modules, including feed-forward neural networks. It is a key class that provides a lot of the functionalities needed for building and training neural networks.
+
+Question 2:
+In PyTorch, which function is used to apply the softmax activation function to the output layer of a feed-forward neural network for classification tasks?
+A) torch.sigmoid
+B) torch.relu
+C) torch.softmax
+D) torch.tanh
+
+Explanation:
+C) torch.softmax is the correct answer. The softmax function is commonly applied to the final layer of a neural network during classification tasks to convert raw logits into probabilities that sum to one.
+
+Question 3:
+When initializing weights for a feed-forward neural network in PyTorch, which of the following initializations is LEAST likely to be appropriate in practice?
+A) Xavier/Glorot Initialization
+B) Kaiming/He Initialization
+C) Zero Initialization
+D) Random Normal Initialization
+
+Explanation:
+C) Zero Initialization is the least appropriate as initializing weights to zeros leads to symmetry breaking problems where all neurons learn the same features during training, which is not desirable.
+
+Question 4:
+In a feed-forward neural network for NLP, what is the purpose of using an embedding layer?
+A) To reduce the dimensionality of the output layer
+B) To encode categorical variables into binary vectors
+C) To transform word tokens into fixed-size dense vectors
+D) To perform word tokenization
+
+Explanation:
+C) To transform word tokens into fixed-size dense vectors. An embedding layer maps discrete tokens (like words or characters) to continuous dense vectors which can capture semantic meanings.
+
+Question 5:
+Which loss function is most commonly used in feed-forward neural networks for multi-class classification tasks in NLP?
+A) Mean Squared Error Loss
+B) Binary Cross-Entropy Loss
+C) Cross-Entropy Loss
+D) Hinge Loss
+
+Explanation:
+C) Cross-Entropy Loss is the most common for multi-class classification tasks because it measures the performance of a classification model whose output is a probability value between 0 and 1.
+
+Question 6:
+What is a common technique to prevent overfitting in feed-forward neural networks used in NLP?
+A) Increasing the learning rate
+B) Reducing the size of the hidden layers
+C) Dropout
+D) Removing the activation functions
+
+Explanation:
+C) Dropout is a regularization technique that randomly sets a fraction of input units to 0 at each update during training time, which helps to prevent overfitting.
+
+Question 7:
+In PyTorch, which method should be called to reset gradients before starting backpropagation?
+A) zero_grad()
+B) detach()
+C) backward()
+D) step()
+
+Explanation:
+A) zero_grad() is the correct answer. Before backpropagating errors and updating weights, it's necessary to zero the gradients to prevent accumulation from previous forward passes.
+
+Question 8:
+What is the role of the ReLU activation function in a feed-forward neural network for NLP?
+A) To introduce linearity into the model
+B) To normalize input features
+C) To introduce non-linearity into the model
+D) To combine multiple hidden layers into one
+
+Explanation:
+C) To introduce non-linearity into the model. ReLU (Rectified Linear Unit) is an activation function that introduces non-linear properties to the model, allowing it to learn more complex patterns.
+
+Question 9:
+When creating a feed-forward neural network in PyTorch for an NLP task, which of the following modules would be used to create a fully connected layer?
+A) torch.nn.Linear
+B) torch.nn.Conv1d
+C) torch.nn.RNN
+D) torch.nn.MaxPool1d
+
+Explanation:
+A) torch.nn.Linear is the correct answer. The `torch.nn.Linear` module is used to apply a linear transformation to the incoming data, which is how fully connected layers are implemented in PyTorch.
+
+Question 10:
+How does batch normalization aid in training feed-forward neural networks for NLP?
+A) It speeds up training by reducing internal covariate shift
+B) It increases the batch size automatically
+C) It decreases model accuracy but increases interpretability
+D) It replaces the need for dropout layers
+
+Explanation:
+A) It speeds up training by reducing internal covariate shift. Batch normalization normalizes the input of each mini-batch, which stabilizes the learning process and reduces the number of epochs required for training.

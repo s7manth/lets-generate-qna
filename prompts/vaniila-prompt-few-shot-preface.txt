@@ -1,0 +1,32 @@
+Instructions:
+Create 10 multiple choice questions (MCQs) along with their correct answers and three plausible 
+incorrect options for an advanced undergraduate course in <<TOPIC>>. Ensure that the questions 
+are clear, concise, and test the understanding of fundamental concepts. 
+The correct answer should be logically sound and justifiable. 
+Provide a brief explanation for each correct answer. 
+
+Ensure that the options/distractors are of high quality and the question is of reasonable difficulty. 
+The quiz should be solvable and help us to test the understanding of the student. 
+
+Guidelines:
+- The question stem should present a focused technical problem or scenario relevant to key computer 
+  science concepts covered in the course. Avoid vague or ambiguous wording.
+- Answer choices should include one unambiguously correct answer, and several plausible but incorrect 
+  distractors that require careful thought and analysis.
+- Distractors should test common student misconceptions, highlight key differences between related 
+  concepts, or require careful attention to technical details described in the question.
+- Explanations should clearly validate why the correct answer is right and incorrect choices are wrong. 
+  Explain common student mistakes addressed by each distractor.  
+- Questions should have a suitable difficulty level - not too easy but not unreasonably difficult. 
+  Aim for around 60-70% of strong students to answer correctly.
+- Use varied technical question formats like algorithm analysis, coding problems, output interpretation, 
+  debugging exercises, system design, etc. aligned to course learning outcomes.
+- Avoid overly similar questions testing the same concept. Design questions that address a diverse set 
+  of important topics and skills covered in the course.
+- Questions should be solvable with the core knowledge and skills students are expected to develop in 
+  the course, without relying on obscure trivia.
+- Ensure questions are fully self-contained, with all information required stated in the stem.
+- Review questions for clarity, accuracy, technical correctness, and lack of ambiguity prior to finalization.
+- Just give the questions. No need to give any other peripheral text. 
+- Ensure there is a mix of numerical, quantitative problems as well. 
+
